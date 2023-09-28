@@ -6,9 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/* cor #original do body #0c1022 */
 body {
-    background: #0c1022;
+    background: #060811; 
     color: #fff;
 }
 
@@ -363,3 +363,53 @@ body {
         transform: rotate(360deg);
     }
 }
+
+
+/* ESTILO SOBRE MIM */
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre .txt-sobre p {
+    margin: 5px 0;
+    text-align: justify;
+    height: 400;
+    font-size: 20px;
+}
+
+.txt-sobre h2 {
+    font-size: 51px;
+    padding: 50px;
+    height: 900;
+}
+
+.txt-sobre h2 span {
+    font-size: 56px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    background: linear-gradient(45deg, #f06, #3cf);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    line-height: 35px;
+}
+
+
+
+/* ESTILO DA SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: linear-gradient(45deg, #f06, #3cf);
+}/* ESTILO DA SCROLLBAR */
