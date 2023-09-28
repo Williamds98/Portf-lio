@@ -39,6 +39,7 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+/* WDS. */
 
 /* NAVBAR */
 .navbar a {
@@ -51,6 +52,7 @@ body {
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
+/* NAVBAR */
 
 /* EFEITOS DA NAVBAR */
 .navbar a.active,
@@ -99,6 +101,8 @@ body {
     animation: slideLeft 1s ease forwards;
     animation-delay: 1.3s;
 }
+/* EFEITOS DA NAVBAR */
+
 
 /* BOTÃO "MEU CURRICULO" */
 .btn {
@@ -119,6 +123,7 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: 1.8s;
 }
+/* BOTÃO "MEU CURRICULO" */
 
 /* EFEITOS DO BOTÃO */
 .btn::before {
@@ -158,6 +163,8 @@ body {
 .btn:hover::after {
     background-position: 100% 0;
 }
+/* EFEITOS DO BOTÃO */
+
 
 /* ICONES DAS REDES-SOCIAIS */
 .home-sci a{
@@ -224,6 +231,8 @@ body {
 .home-sci a:hover:after {
     transform: scale(0);
 }
+/* ICONES DAS REDES-SOCIAIS */
+
 
 /* IMAGEM E BORDA */
 .home-img {
@@ -284,6 +293,7 @@ body {
     max-width: 350px;
     object-fit: cover;
 }
+/* IMAGEM E BORDA */
 
 
 /* KEYFRAMES ANIMATION */
@@ -363,6 +373,8 @@ body {
         transform: rotate(360deg);
     }
 }
+/* KEYFRAMES ANIMATION */
+
 
 
 /* ESTILO SOBRE MIM */
@@ -412,4 +424,5 @@ section.sobre .flex{
 ::-webkit-scrollbar-thumb {
     width: 10px;
     background: linear-gradient(45deg, #f06, #3cf);
-}/* ESTILO DA SCROLLBAR */
+}
+/* ESTILO DA SCROLLBAR */
