@@ -701,8 +701,9 @@ section.portfolio{
 }
 
 @media (max-width: 600px) {
-    .card
+    .card{
         margin-bottom: 35px;
+    }
 }
 
 
