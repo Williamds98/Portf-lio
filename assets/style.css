@@ -550,22 +550,22 @@ grid-column-gap: 50px;
 
 .skill-bar .bar .html {
     width: 50%;
-    animation: html 2s
+    animation: html 10s infinite;
 }
 
 .skill-bar .bar .css {
     width: 40%;
-    animation: css 3s;
+    animation: css 10s infinite;
 }
 
 .skill-bar .bar .javascript {
     width: 15%;
-    animation: javascript 4s;
+    animation: javascript 10s infinite;
 }
 
 .skill-bar .bar .mysql {
     width: 5%;
-    animation: mysql 5s;
+    animation: mysql 10s infinite;
 }
 
 /* ESTILO DO PORTFOLIO */
@@ -701,9 +701,10 @@ section.portfolio{
 }
 
 @media (max-width: 600px) {
-    .card{
+    .card
         margin-bottom: 35px;
 }
+
 
     .txt-sobre{
             padding: 2rem;
