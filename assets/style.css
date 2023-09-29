@@ -6,14 +6,21 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* SCROLL SUAVE */
+html{
+    scroll-behavior: smooth;
+}
+
 /* cor #original do body #0c1022 */
 body {
     background: #060811; 
     color: #fff;
+    justify-content: center;
 }
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -455,11 +462,11 @@ section.sobre .flex{
 
 /* ESTILO DA SCROLLBAR */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    width: 10px;
+    width: 6px;
     background: linear-gradient(45deg, #f06, #3cf);
 }
 /* ESTILO DA SCROLLBAR */
@@ -559,4 +566,117 @@ grid-column-gap: 50px;
 .skill-bar .bar .mysql {
     width: 5%;
     animation: mysql 5s;
+}
+
+/* ESTILO DO PORTFOLIO */
+
+section.portfolio{
+    width: 100%;
+    height: 100vh;
+    background-color: #06081188;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-txt h2{
+    text-align: center;
+    font-size: 56px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    animation: slideTop 1s ease forwards;
+    background: linear-gradient(45deg, #f06, #3cf);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+
+.card{
+    width: 320px;
+    height: 500px;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: inline-block; 
+    row-gap: 2rem;
+    justify-content: space-between;
+    margin-inline-end: 30px;
+    margin-left: 85px;
+
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #060811;
+    transition: 2s;
+}
+
+.card:hover .card-body{
+    right: 0;
+
+}
+
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight:500 ;
+}
+
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    color: #060811;
+}
+
+.card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 500;
+    background: transparent;
+    color: #060811;
+}
+
+
+.card-btn{
+    color: #fff;
+    background: #060811;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight:300;
+    cursor: pointer;
+    text-decoration: none;
 }
