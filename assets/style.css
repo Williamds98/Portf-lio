@@ -12,7 +12,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/* cor #original do body #0c1022 */
+/* cor #original do body #0c1022, segunda cor #060811 */
 body {
     background: #060811; 
     color: #fff;
@@ -687,6 +687,19 @@ section.portfolio{
 
 /* media query */
 
+
+
+/* PARA PEQUENOS DISPOSITIVOS */
+@media screen and (max-width: 350px){
+
+}
+
+
+/* PARA DISPOSITIVOS MÉDIOS */
+@media screen and (min-width: 576px){
+
+}
+
 @media (max-width: 600px) {
     .card{
         margin-bottom: 35px;
@@ -706,8 +719,13 @@ section.portfolio{
         font-size: 2.5rem;
     }
 
-    .sobre p {
-        
-    }
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+/* PARA GRANDES DISPOSITIVOS */
+@media screen and (min-width: 1024px){
 
 }
