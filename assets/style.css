@@ -592,6 +592,7 @@ section.portfolio{
     text-align: center;
     padding: 15px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -610,6 +611,8 @@ section.portfolio{
     justify-content: space-between;
     margin-inline-end: 30px;
     margin-left: 85px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 
 }
 
@@ -679,4 +682,32 @@ section.portfolio{
     font-weight:300;
     cursor: pointer;
     text-decoration: none;
+}
+
+
+/* media query */
+
+@media (max-width: 600px) {
+    .card{
+        margin-bottom: 35px;
+    }
+
+    .txt-sobre{
+            padding: 2rem;
+            font-size: 1rem;
+    }
+
+    .sobre h2{
+        font-size: 2.5rem;
+        
+    }
+
+    .sobre h2 span{
+        font-size: 2.5rem;
+    }
+
+    .sobre p {
+        
+    }
+
 }
