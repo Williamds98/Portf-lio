@@ -442,6 +442,7 @@ section.sobre .flex{
     padding: 50px;
     height: 900;
     margin-top: 100px;
+    text-align: center;
 }
 
 .txt-sobre h2 span {
