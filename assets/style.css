@@ -133,6 +133,7 @@ body {
 /* BOTÃO "MEU CURRICULO" */
 
 /* EFEITOS DO BOTÃO */
+
 .btn::before {
     content: '';
     position: absolute;
@@ -170,6 +171,12 @@ body {
 .btn:hover::after {
     background-position: 100% 0;
 }
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px (45deg, #f06, #3cf, #f06);
+    transform: scale(1.05);
+}
+
 /* EFEITOS DO BOTÃO */
 
 
@@ -510,7 +517,7 @@ grid-column-gap: 50px;
     -webkit-background-clip: text;
     text-align: center;
     padding: 15px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 
@@ -577,6 +584,7 @@ section.portfolio{
     background-color: #06081188;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
 
 .portfolio-txt h2{
@@ -684,6 +692,73 @@ section.portfolio{
     cursor: pointer;
     text-decoration: none;
 }
+
+/* CONTATO */
+section.formulario{
+    padding: 80px 4%;
+    margin-top: 200px;
+}
+
+.interface h2{
+    text-align: center;
+    padding: 80px 4%;
+    font-size: 56px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    background: linear-gradient(45deg, #f06, #3cf);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    line-height: 35px;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #4b4b4bd2;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: #ffffffd0;
+}
+
+form textarea{
+    resize: none;
+    max-width: 500px;
+}
+
+form .btn-enviar{
+    margin-top: 25px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background: linear-gradient(45deg, #f06, #3cf);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+/* CONTATO */
+
 
 
 /* media query */
