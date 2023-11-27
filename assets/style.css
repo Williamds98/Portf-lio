@@ -764,14 +764,13 @@ form .btn-enviar input{
 /* media query */
 
 
-
-/* PARA PEQUENOS DISPOSITIVOS */
+ /* PARA PEQUENOS DISPOSITIVOS  */
 @media screen and (max-width: 350px){
 
 }
 
 
-/* PARA DISPOSITIVOS MÉDIOS */
+
 @media screen and (min-width: 576px){
 
 }
@@ -794,14 +793,57 @@ form .btn-enviar input{
 
     .sobre h2 span{
         font-size: 2.5rem;
+} 
+
+
+@media screen and (max-width: 768px){
+    .home-content {
+        margin-top: 70px;
+    }
+
+    .home-content h1{
+        font-size: 30px;
+    }
+
+    .home-content h3{
+        font-size: 15px;
+
+    }
+
+
+    .home-img {
+        display: none;
+    }
+
+    .home-sci{
+        display: flex;
+        flex-direction: row;
+        margin-top: 95px;
+        padding: 20px;
+        
+    }
+
+    .txt-sobre h2{
+    font-size: 30px;
+    margin-top: 180px;
+    }
+
+    .txt-sobre h2 span{
+        font-size: 30px;
+    }
+
+    .txt-sobre p{
+        font-size: 2px;
+    }
+
+    .btn{
+        margin-left: 35px;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
-
-@media screen and (min-width: 768px){
-
-}
-
-/* PARA GRANDES DISPOSITIVOS */
-@media screen and (min-width: 1024px){
-
-}
